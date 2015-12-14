@@ -73,13 +73,16 @@ and open the template in the editor.
              <input type="text" ng-model="email" placeholder="email">
               <input type="text" ng-model="paterno" placeholder="paterno">
              <button ng-click="guardar()" class="btn btn-primary">Guardar cliente</button>
-            <h3>Ahora vamos a buscar todos</h3>
+             <button ng-click="actualizar()" class="btn btn-primary">Actualizar los datos</button>
+             <br>
             <div  class="btn btn-warning" ng-click="buscarTodos()"> Buscar Todos
                 </div>
+            
             <br>
-            <input type=text ng-model="miId" placeholder="mete un id">
-            <div class="btn btn-warning" ng-click="buscarPorId()">buscar por id</div>
-           
+            <input type=text ng-model="miId" placeholder="Inserte un ID">
+            <div class="btn btn-warning" ng-click="buscarPorId()">Buscar por ID</div>
+            <div class="btn btn-warning" ng-click="eliminar()">Eliminar por ID</div>
+
         </div>
     </body>
 </html>
